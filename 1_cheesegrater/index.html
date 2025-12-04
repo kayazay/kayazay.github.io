@@ -4,63 +4,6 @@
     <meta charset="UTF-8">
     <title>Cheese Grater Reverse Engineering</title>
     <link rel="stylesheet" href="../style.css">
-    <style>
-        .section {
-            max-width: 900px;
-            margin: 40px auto;
-            text-align: left;
-        }
-
-        .section h2 {
-            margin-bottom: 10px;
-            color: #004d40;
-        }
-
-        .section p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        .skills-list ul {
-            list-style: disc;
-            padding-left: 20px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .grid img {
-            width: 100%;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 6px;
-            box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
-        }
-
-        .exploded img,
-        .video-section img {
-            width: 100%;
-            border-radius: 8px;
-            margin-top: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-
-        .backlink {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .backlink a {
-            color: #004d40;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 18px;
-        }
-    </style>
 </head>
 <body>
 
@@ -79,10 +22,9 @@
 <div class="section">
     <h2>Overview</h2>
     <p>
-        This project involved reverse-engineering a 4-sided stainless steel cheese grater 
-        and reproducing all components in CAD using precise measurements.  
-        The model includes 12–15 individual parts fully dimensioned and mated into an 
-        exploded assembly.
+        This project involves reverse-engineering a plastic kitchen cheese grater. 
+        I worked with 8 components through disassembly, part measurement, sketching, 
+        3D modeling, and final product assembly.
     </p>
 </div>
 
@@ -90,9 +32,10 @@
 <div class="section">
     <h2>Objective</h2>
     <p>
-        The goal was to accurately replicate an existing physical product, 
-        understand its geometry and manufacturing intent, and produce a complete set of 
-        CAD-ready parts and assembly documentation.
+        This project was completed as part of a class term assignment. 
+        The goal was to develop familiarity with disassembly and reconstruction 
+        of real-world objects to gain an understanding of their design features, 
+        how components interact, and the underlying manufacturing considerations.
     </p>
 </div>
 
@@ -100,21 +43,31 @@
 <div class="section skills-list">
     <h2>Skills Used</h2>
     <ul>
-        <li>Precise measurement & reverse-engineering techniques</li>
-        <li>Part modeling (extrude, revolve, patterns, cuts)</li>
+        <li>Precise measurement</li>
+        <li>Advanced SolidWorks modeling (patterned extrusions, swept profiles, shelling, symmetric and asymmetric lofts)</li>
         <li>Assembly mates & exploded view animation</li>
         <li>Technical drawings & dimensioning</li>
-        <li>Material selection & manufacturability awareness</li>
     </ul>
 </div>
 
 <!-- Additional Sections -->
 <div class="section">
     <h2>Tools & Software</h2>
-    <p>Onshape / SolidWorks</p>
+    <p>SolidWorks / Vernier Calipers / Micrometer Gauge</p>
 
-    <h2>Part Count</h2>
-    <p>12–15 fully modeled components</p>
+    <h2>Obstacles & Solutions</h2>
+    <ul>
+        <li>
+           <strong>Obstacle:</strong> Obtaining accurate measurements due to the enclosed design of the product.  
+            <br>
+           <strong>Solution:</strong> Averaged multiple measurement samples and cross-referenced them with mated parts in the assembly.
+        </li>
+        <li>
+           <strong>Obstacle:</strong> Establishing core geometry for each part.  
+            <br>
+           <strong>Solution:</strong> Applied advanced modeling techniques and consulted the SolidWorks community for software troubleshooting.
+        </li>
+    </ul>
 </div>
 
 <!-- Part Drawings Grid -->
@@ -142,16 +95,13 @@
 
 <!-- Video Thumbnail -->
 <div class="section video-section">
-    <h2>Animated View of Assembly</h2>
-    <blockquote class="tiktok-embed" 
-                cite="https://www.tiktok.com/@unclekeze/video/7579988551949880583" 
-                data-video-id="7579988551949880583" 
-                style="max-width: 605px; min-width: 325px; margin: 0 auto;">
-        <section></section>
-    </blockquote>
-    <script async src="https://www.tiktok.com/embed.js"></script>
+    <h2>SolidWorks Animated Assembly</h2>
+    <a href="https://www.tiktok.com/@unclekeze/video/7579988551949880583" target="_blank">
+        <img src="images/1_thumb.jpg" 
+             alt="Click to watch video"
+             class="video-thumb">
+    </a>
 </div>
-
 
 <!-- Back to Projects -->
 <div class="backlink">
