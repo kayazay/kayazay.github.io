@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cheese Grater Reverse Engineering</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .section {
+            max-width: 900px;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            color: #004d40;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .skills-list ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 6px;
+            box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+        }
+
+        .exploded img,
+        .video-section img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .backlink {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .backlink a {
+            color: #004d40;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../pages/projects.html">PROJECTS</a></li>
+    </ul>
+</nav>
+
+<h1 style="text-align:center; margin-top:40px;">
+    Cheese Grater Reverse Engineering
+</h1>
+
+<!-- Overview -->
+<div class="section">
+    <h2>Overview</h2>
+    <p>
+        This project involved reverse-engineering a 4-sided stainless steel cheese grater 
+        and reproducing all components in CAD using precise measurements.  
+        The model includes 12–15 individual parts fully dimensioned and mated into an 
+        exploded assembly.
+    </p>
+</div>
+
+<!-- Objective -->
+<div class="section">
+    <h2>Objective</h2>
+    <p>
+        The goal was to accurately replicate an existing physical product, 
+        understand its geometry and manufacturing intent, and produce a complete set of 
+        CAD-ready parts and assembly documentation.
+    </p>
+</div>
+
+<!-- Skills Used -->
+<div class="section skills-list">
+    <h2>Skills Used</h2>
+    <ul>
+        <li>Precise measurement & reverse-engineering techniques</li>
+        <li>Part modeling (extrude, revolve, patterns, cuts)</li>
+        <li>Assembly mates & exploded view animation</li>
+        <li>Technical drawings & dimensioning</li>
+        <li>Material selection & manufacturability awareness</li>
+    </ul>
+</div>
+
+<!-- Additional Sections -->
+<div class="section">
+    <h2>Tools & Software</h2>
+    <p>Onshape / SolidWorks</p>
+
+    <h2>Part Count</h2>
+    <p>12–15 fully modeled components</p>
+</div>
+
+<!-- Part Drawings Grid -->
+<div class="section">
+    <h2>Part Drawings</h2>
+    <p>Below is a collection of the part drawings created for this project.</p>
+
+    <div class="grid">
+        <!-- Add each thumbnail here -->
+        <img src="images/part1.jpg">
+        <img src="images/part2.jpg">
+        <img src="images/part3.jpg">
+        <img src="images/part4.jpg">
+        <img src="images/part5.jpg">
+        <img src="images/part6.jpg">
+        <!-- keep adding as many as you want -->
+    </div>
+</div>
+
+<!-- Exploded Assembly -->
+<div class="section exploded">
+    <h2>Exploded Assembly</h2>
+    <img src="images/exploded.jpg" alt="Exploded View">
+</div>
+
+<!-- Video Thumbnail -->
+<div class="section video-section">
+    <h2>Video Showcase</h2>
+    <img src="images/video_thumb.jpg" alt="Video Thumbnail">
+</div>
+
+<!-- Back to Projects -->
+<div class="backlink">
+    <a href="../pages/projects.html">← Back to Projects</a>
+</div>
+
+</body>
+</html>
