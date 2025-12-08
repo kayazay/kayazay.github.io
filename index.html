@@ -6,11 +6,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show-menu");
+}
+</script>
+
 <body>
 
 <!-- NAVBAR -->
-<nav>
-    <ul>
+<nav class="navbar">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-center">Kingsley Eze Portfolio</div>
+
+    <ul class="nav-links" id="navMenu">
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#skills">SKILLS</a></li>
@@ -19,9 +29,7 @@
     </ul>
 </nav>
 
-<!-- =======================
-      HOME SECTION
-======================= -->
+<!-- HOME SECTION -->
 <section id="home" class="section-block">
     <img src="images/mainpic.jpg" class="center-image">
     <h1>Welcome to Kingsley's Portfolio</h1>
@@ -30,9 +38,7 @@
     </p>
 </section>
 
-<!-- =======================
-      ABOUT SECTION
-======================= -->
+<!-- ABOUT SECTION -->
 <section id="about" class="section-block">
     <h2>About Me</h2>
     <p>
@@ -41,37 +47,41 @@
     </p>
 </section>
 
-<!-- =======================
-      SKILLS SECTION
-======================= -->
+<!-- SKILLS SECTION -->
 <section id="skills" class="section-block">
     <h2>Skills</h2>
     <p>SolidWorks • Onshape • Technical Drawings • GD&T • Measurements • 3D Modeling • Assemblies</p>
 </section>
 
-<!-- =======================
-      PROJECTS SECTION
-======================= -->
+<!-- PROJECTS SECTION -->
 <section id="projects" class="section-block">
     <h2>Projects</h2>
-
     <div class="project-grid">
 
         <div class="project-card">
-            <img src="cheesegrater/images/part1.jpg">
+            <img src="1_cheesegrater/images/thumbnail.png">
             <h3>Cheese Grater Reverse Engineering</h3>
             <p>Full reconstruction of a multi-part kitchen tool using SolidWorks.</p>
             <a href="cheesegrater/index.html" class="btn">View Project</a>
         </div>
 
-        <!-- Add more project cards here -->
-        
+        <div class="project-card">
+            <img src="images/project2.jpg" alt="Project 2">
+            <h3>Bicycle Assembly</h3>
+            <p>8-part assembly with features, mates, and BOM.</p>
+            <a href="project2.html" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <img src="images/project3.jpg" alt="Project 3">
+            <h3>Swivel Desk Lamp</h3>
+            <p>Parametric CAD model with assemblies, mates, and motion.</p>
+            <a href="project3.html" class="btn">View Project</a>
+        </div>
     </div>
 </section>
 
-<!-- =======================
-      CONTACT SECTION
-======================= -->
+<!-- CONTACT SECTION -->
 <section id="contact" class="section-block">
     <h2>Contact</h2>
     <p>Email: kngseze@gmail.com</p>

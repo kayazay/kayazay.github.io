@@ -1,17 +1,16 @@
-/* =======================================
-   FONTS (Matches tjwatson vibe)
-   ======================================= */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
 
-/* =======================================
-   GLOBAL BASE THEME — BLACK MODE
-   ======================================= */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     margin: 0;
-    background: #181a1b;  /* modern portfolio black */
-    color: #e6e6e6;        /* soft white */
+    background: #181a1b;
+    color: #e6e6e6;
     text-align: center;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
 }
 
 img {
@@ -20,11 +19,9 @@ img {
     display: block;
 }
 
-/* =======================================
-   NAVIGATION BAR (Engineering Green)
-   ======================================= */
+/* NAVIGATION BAR */
 nav {
-    background: #004d40; /* engineering dark green */
+    background: #004d40;
     padding: 15px 0;
     border-bottom: 1px solid #006657;
     position: sticky;
@@ -36,33 +33,31 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-nav ul li {
+nav li {
     display: inline-block;
     margin: 0 20px;
 }
 
-nav ul li a {
+nav a {
     color: #e8eceb;
     text-decoration: none;
     font-size: 17px;
     font-weight: 500;
-    font-family: 'Inter', sans-serif;
     transition: 0.2s;
 }
 
-nav ul li a:hover {
-    color: #7fffd4; /* mint highlight */
+nav a:hover {
+    color: #7fffd4;
 }
 
-/* =======================================
-   HEADINGS (Serif like tjwatson)
-   ======================================= */
+/* HEADINGS */
+
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: Georgia, serif;
     font-weight: 600;
-    letter-spacing: 0.5px;
     color: #ffffff;
 }
 
@@ -80,9 +75,8 @@ h3 {
     font-size: 22px;
 }
 
-/* =======================================
-   PARAGRAPH TEXT (Clean modern typography)
-   ======================================= */
+/* PARAGRAPHS */
+
 p {
     font-size: 16px;
     line-height: 1.7;
@@ -92,39 +86,56 @@ p {
     color: #d0d0d0;
 }
 
-/* =======================================
-   HOME — CENTER MAIN IMAGE
-   ======================================= */
+/* SECTION BLOCKS (FULL-SCREEN) */
+
+.section-block {
+    height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Home image */
+
 .center-image {
     width: 350px;
     border-radius: 10px;
-    margin: 40px auto 20px auto;
-    display: block;
+    margin: 40px auto 20px;
     box-shadow: 0 0 22px rgba(127,255,212,0.18);
 }
 
-/* =======================================
-   PROJECT GRID (no layout change)
-   ======================================= */
+/* PROJECTS SECTION */
+
+#projects {
+    height: auto;
+    scroll-snap-align: start;
+    padding: 120px 20px;
+}
+
+/* Project grid */
+
 .project-grid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap;
     padding: 40px;
 }
 
-/* =======================================
-   PROJECT CARDS — BLACK THEME
-   ======================================= */
+/* Project cards */
+
 .project-card {
-    background: #111; /* dark card */
+    background: #111;
     padding: 20px;
     width: 280px;
     border-radius: 12px;
     box-shadow: 0 4px 18px rgba(0,0,0,0.8);
+    border-top: 4px solid #00735a;
     text-align: center;
-    border-top: 4px solid #00735a; /* engineering green accent */
 }
 
 .project-card img {
@@ -136,9 +147,8 @@ p {
 
 .project-card h3 {
     margin: 15px 0 10px;
-    color: #7fffd4;
-    font-family: 'Playfair Display', serif;
     font-size: 22px;
+    color: #7fffd4;
 }
 
 .project-card p {
@@ -146,9 +156,8 @@ p {
     color: #c8c8c8;
 }
 
-/* =======================================
-   BUTTONS — Mint Engineering Style
-   ======================================= */
+/* Buttons */
+
 .btn {
     display: inline-block;
     margin-top: 10px;
@@ -165,9 +174,8 @@ p {
     background: #009b73;
 }
 
-/* =======================================
-   PROJECT PAGE SECTIONS — BLACK PANELS
-   ======================================= */
+/* PROJECT DETAIL PAGES */
+
 .section {
     max-width: 900px;
     margin: 40px auto;
@@ -186,17 +194,13 @@ p {
     color: #d6d6d6;
 }
 
-/* =======================================
-   PART DRAWINGS GRID
-   ======================================= */
+/* THUMBNAILS / EXTRA IMAGES */
+
 .grid img {
     border-radius: 6px;
     box-shadow: 0 0 6px rgba(127,255,212,0.25);
 }
 
-/* =======================================
-   EXPLODED VIEW + VIDEO
-   ======================================= */
 .exploded img,
 .video-section img {
     border-radius: 8px;
@@ -208,9 +212,8 @@ p {
     transform: scale(1.03);
 }
 
-/* =======================================
-   BACKLINK
-   ======================================= */
+/* BACKLINK */
+
 .backlink a {
     color: #7fffd4;
     text-decoration: none;
@@ -219,4 +222,76 @@ p {
 
 .backlink a:hover {
     color: #32ffb2;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #004d40;
+    padding: 15px 20px;
+    border-bottom: 1px solid #006657;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    display: flex;
+    justify-content: center; /* center the title */
+    align-items: center;
+    position: relative; /* allows hamburger to anchor left */
+}
+
+/* TITLE CENTERED */
+.nav-center {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+/* HAMBURGER LEFT */
+.hamburger {
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    position: absolute;
+    left: 20px;  /* KEEP IT ON LEFT */
+    top: 12px;
+    display: block;
+}
+
+/* MENU DEFAULT HIDDEN */
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    background: #00372f;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #00574a;
+    margin: 0;
+}
+
+/* LINKS */
+.nav-links li {
+    margin: 12px 0;
+}
+
+.nav-links a {
+    color: #e8eceb;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #7fffd4;
+}
+
+/* SHOW MENU WHEN HAMBURGER CLICKED */
+.nav-links.show-menu {
+    display: flex;
 }
