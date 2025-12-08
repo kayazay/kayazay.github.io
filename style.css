@@ -19,39 +19,26 @@ img {
     display: block;
 }
 
-/* NAVIGATION BAR */
-nav {
-    background: #004d40;
-    padding: 15px 0;
-    border-bottom: 1px solid #006657;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 999;
+/* MOBILE FONT OPTIMIZATION */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 15px;
+        max-width: 90%;
+    }
+    .project-card {
+        width: 90%;
+    }
+    .center-image {
+        width: 260px;
+    }
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-nav a {
-    color: #e8eceb;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 500;
-    transition: 0.2s;
-}
-
-nav a:hover {
-    color: #7fffd4;
-}
 
 /* HEADINGS */
 
@@ -87,10 +74,9 @@ p {
 }
 
 /* SECTION BLOCKS (FULL-SCREEN) */
-
 .section-block {
     height: 100vh;
-    padding: 80px 20px;
+    padding: 120px 20px 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,3 +281,17 @@ p {
 .nav-links.show-menu {
     display: flex;
 }
+
+/* FADE-IN ANIMATION */
+.fade-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When visible */
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+

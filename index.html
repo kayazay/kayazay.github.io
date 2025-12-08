@@ -7,9 +7,22 @@
 </head>
 
 <script>
-function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("show-menu");
-}
+    function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("show-menu");
+    }
+
+    // Fade-in scroll animation
+    const sections = document.querySelectorAll('.fade-section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.3 });
+
+    sections.forEach(sec => observer.observe(sec));
 </script>
 
 <body>
@@ -30,7 +43,7 @@ function toggleMenu() {
 </nav>
 
 <!-- HOME SECTION -->
-<section id="home" class="section-block">
+<section id="home" class="section-block fade-section" >
     <img src="images/mainpic.jpg" class="center-image">
     <h1>Welcome to Kingsley's Portfolio</h1>
     <p>
@@ -39,7 +52,7 @@ function toggleMenu() {
 </section>
 
 <!-- ABOUT SECTION -->
-<section id="about" class="section-block">
+<section id="about" class="section-block fade-section">
     <h2>About Me</h2>
     <p>
         I am a Mechanical Engineering student with strong interests in CAD modeling, product design,
@@ -48,13 +61,13 @@ function toggleMenu() {
 </section>
 
 <!-- SKILLS SECTION -->
-<section id="skills" class="section-block">
+<section id="skills" class="section-block fade-section">
     <h2>Skills</h2>
     <p>SolidWorks • Onshape • Technical Drawings • GD&T • Measurements • 3D Modeling • Assemblies</p>
 </section>
 
 <!-- PROJECTS SECTION -->
-<section id="projects" class="section-block">
+<section id="projects" class="section-block fade-section">
     <h2>Projects</h2>
     <div class="project-grid">
 
@@ -82,11 +95,34 @@ function toggleMenu() {
 </section>
 
 <!-- CONTACT SECTION -->
-<section id="contact" class="section-block">
+<section id="contact" class="section-block fade-section">
     <h2>Contact</h2>
     <p>Email: kngseze@gmail.com</p>
     <p>LinkedIn: linkedin.com/in/kingsley-eze</p>
 </section>
+
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("show-menu");
+    }
+
+    // Fade-in scroll animation
+    document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll('.fade-section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        sections.forEach(sec => observer.observe(sec));
+    });
+</script>
+
 
 </body>
 </html>
