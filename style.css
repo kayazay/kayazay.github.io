@@ -1,13 +1,36 @@
+/* =======================================
+   FONTS (Matches tjwatson vibe)
+   ======================================= */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* =======================================
+   GLOBAL BASE THEME — BLACK MODE
+   ======================================= */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
-    background: #f8f8f8;
+    background: #181a1b;  /* modern portfolio black */
+    color: #e6e6e6;        /* soft white */
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =======================================
+   NAVIGATION BAR (Engineering Green)
+   ======================================= */
 nav {
-    background: #004d40; /* dark engineering green */
+    background: #004d40; /* engineering dark green */
     padding: 15px 0;
+    border-bottom: 1px solid #006657;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 nav ul {
@@ -21,30 +44,68 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #e8eceb;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    transition: 0.2s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #7fffd4; /* mint highlight */
 }
 
-.content {
+/* =======================================
+   HEADINGS (Serif like tjwatson)
+   ======================================= */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 42px;
     margin-top: 40px;
 }
 
+h2 {
+    font-size: 30px;
+    margin: 25px 0 10px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+/* =======================================
+   PARAGRAPH TEXT (Clean modern typography)
+   ======================================= */
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 0 20px;
+    color: #d0d0d0;
+}
+
+/* =======================================
+   HOME — CENTER MAIN IMAGE
+   ======================================= */
 .center-image {
-    width: 300px;
+    width: 350px;
     border-radius: 10px;
+    margin: 40px auto 20px auto;
+    display: block;
+    box-shadow: 0 0 22px rgba(127,255,212,0.18);
 }
 
-.page-title {
-    font-size: 32px;
-    margin-top: 40px;
-}
-
+/* =======================================
+   PROJECT GRID (no layout change)
+   ======================================= */
 .project-grid {
     display: flex;
     justify-content: center;
@@ -53,13 +114,17 @@ nav ul li a:hover {
     padding: 40px;
 }
 
+/* =======================================
+   PROJECT CARDS — BLACK THEME
+   ======================================= */
 .project-card {
-    background: white;
+    background: #111; /* dark card */
     padding: 20px;
     width: 280px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.8);
     text-align: center;
+    border-top: 4px solid #00735a; /* engineering green accent */
 }
 
 .project-card img {
@@ -71,94 +136,87 @@ nav ul li a:hover {
 
 .project-card h3 {
     margin: 15px 0 10px;
+    color: #7fffd4;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
 }
 
 .project-card p {
     font-size: 14px;
-    color: #444;
+    color: #c8c8c8;
 }
 
+/* =======================================
+   BUTTONS — Mint Engineering Style
+   ======================================= */
 .btn {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 16px;
-    background: #004d40;
+    background: #00695c;
     color: white;
     border-radius: 6px;
     text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
 }
 
 .btn:hover {
-    background: #00695c;
+    background: #009b73;
 }
 
-
-.page-content {
-    margin-top: 60px;
+/* =======================================
+   PROJECT PAGE SECTIONS — BLACK PANELS
+   ======================================= */
+.section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.65);
+    text-align: left;
 }
 
-.video-thumb {
-    width: 100%;
-    max-width: 500px;
+.section h2 {
+    color: #7fffd4;
+}
+
+.section p {
+    color: #d6d6d6;
+}
+
+/* =======================================
+   PART DRAWINGS GRID
+   ======================================= */
+.grid img {
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(127,255,212,0.25);
+}
+
+/* =======================================
+   EXPLODED VIEW + VIDEO
+   ======================================= */
+.exploded img,
+.video-section img {
     border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    transition: transform 0.2s;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.8);
 }
 
 .video-thumb:hover {
     transform: scale(1.03);
 }
 
-/* This is a comment in CSS */
-.section {
-    max-width: 900px;
-    margin: 40px auto;
-    text-align: left;
+/* =======================================
+   BACKLINK
+   ======================================= */
+.backlink a {
+    color: #7fffd4;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.section h2 {
-    margin-bottom: 10px;
-    color: #004d40;
+.backlink a:hover {
+    color: #32ffb2;
 }
-
-.section p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.skills-list ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.grid img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 6px;
-    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
-}
-
-.exploded img,
-.video-section img {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.backlink {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.backli
-

@@ -5,22 +5,78 @@
     <title>Kingsley Design Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="pages/about.html">ABOUT</a></li>
-            <li><a href="pages/skills.html">SKILLS</a></li>
-            <li><a href="pages/projects.html">PROJECTS</a></li>
-            <li><a href="pages/contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
+<!-- NAVBAR -->
+<nav>
+    <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
 
-    <div class="content">
-        <img src="images/mainpic.jpg" class="center-image">
-        <h1>Welcome to Kingsley's Portfolio</h1>
+<!-- =======================
+      HOME SECTION
+======================= -->
+<section id="home" class="section-block">
+    <img src="images/mainpic.jpg" class="center-image">
+    <h1>Welcome to Kingsley's Portfolio</h1>
+    <p>
+        Mechanical Engineering Student | CAD Designer | Problem Solver  
+    </p>
+</section>
+
+<!-- =======================
+      ABOUT SECTION
+======================= -->
+<section id="about" class="section-block">
+    <h2>About Me</h2>
+    <p>
+        I am a Mechanical Engineering student with strong interests in CAD modeling, product design,
+        engineering problem solving, and reverse-engineering everyday objects.
+    </p>
+</section>
+
+<!-- =======================
+      SKILLS SECTION
+======================= -->
+<section id="skills" class="section-block">
+    <h2>Skills</h2>
+    <p>SolidWorks • Onshape • Technical Drawings • GD&T • Measurements • 3D Modeling • Assemblies</p>
+</section>
+
+<!-- =======================
+      PROJECTS SECTION
+======================= -->
+<section id="projects" class="section-block">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <img src="cheesegrater/images/part1.jpg">
+            <h3>Cheese Grater Reverse Engineering</h3>
+            <p>Full reconstruction of a multi-part kitchen tool using SolidWorks.</p>
+            <a href="cheesegrater/index.html" class="btn">View Project</a>
+        </div>
+
+        <!-- Add more project cards here -->
+        
     </div>
+</section>
+
+<!-- =======================
+      CONTACT SECTION
+======================= -->
+<section id="contact" class="section-block">
+    <h2>Contact</h2>
+    <p>Email: kngseze@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/kingsley-eze</p>
+</section>
 
 </body>
 </html>
