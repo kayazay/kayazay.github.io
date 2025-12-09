@@ -29,11 +29,11 @@
 
 <!-- NAVBAR -->
 <nav class="navbar">
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <!-- <button class="hamburger" onclick="toggleMenu()">☰</button> -->
 
     <div class="nav-center">Kingsley Eze Portfolio</div>
 
-    <ul class="nav-links" id="navMenu">
+    <ul class="nav-links show-menu" id="navMenu">
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#skills">SKILLS</a></li>
@@ -43,7 +43,7 @@
 </nav>
 
 <!-- HOME SECTION -->
-<section id="home" class="section-block fade-section" >
+<section id="home" class="section-block fade-section" style="height: 93vh;">
     <img src="images/mainpic.jpg" class="center-image">
     <h1>Welcome to Kingsley's Portfolio</h1>
     <p>
@@ -63,7 +63,15 @@
 <!-- SKILLS SECTION -->
 <section id="skills" class="section-block fade-section">
     <h2>Skills</h2>
-    <p>SolidWorks • Onshape • Technical Drawings • GD&T • Measurements • 3D Modeling • Assemblies</p>
+    <ul class="skills-div">
+        <li>SolidWorks</li>
+        <li>Onshape</li>
+        <li>Technical Drawings</li>
+        <li>GD&T</li>
+        <li>Measurements</li>
+        <li>3D Modeling</li>
+        <li>Assemblies</li>
+    </ul>
 </section>
 
 <!-- PROJECTS SECTION -->
