@@ -6,7 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
 }
 
 body {
@@ -15,7 +14,7 @@ body {
   background: #181a1b;
   color: #e6e6e6;
   text-align: center;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   overflow-x: hidden;
 }
 
@@ -28,13 +27,13 @@ img {
 /* MOBILE FONT OPTIMIZATION */
 @media (max-width: 600px) {
   h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
   p {
-    font-size: 15px;
+    font-size: 20px;
     max-width: 90%;
   }
   .project-card {
@@ -261,7 +260,6 @@ p {
   bottom: 0;
   width: 100%;
   z-index: 999;
-
   display: flex;
   gap: 48px;
   align-items: center;
@@ -296,10 +294,7 @@ p {
   list-style: none;
   display: none;
   justify-content: space-evenly;
-  /* background: #00372f; */
   width: 82%;
-  /* padding: 20px 0; */
-  /* border-top: 1px solid #00574a; */
   margin: 0;
 }
 
@@ -322,12 +317,23 @@ p {
 /* FADE-IN ANIMATION */
 .fade-section {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateX(20%);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 /* When visible */
 .fade-section.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1280px) {
+  .skills-div {
+    margin: 40px 0;
+    width: 100%;
+  }
+  .skills-div li {
+    margin-right: 48px;
+  }
 }
