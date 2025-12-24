@@ -1,0 +1,91 @@
+[
+  {
+    "title": "Cheese Grater Reverse Engineering",
+    "id": "cheesegrater",
+    "overview": "This project involves reverse-engineering a plastic kitchen cheese grater. I worked with 8 components through disassembly, part measurement, sketching, 3D modeling, and final product assembly.",
+    "objective": "This project was completed as part of a class term assignment. The goal was to develop familiarity with disassembly and reconstruction of real-world objects to gain an understanding of their design features, how components interact, and the underlying manufacturing considerations.",
+    "tags": ["Reverse Engineering", "3D Modeling", "CAD", "Mechanical Design"],
+    "skills": [
+      "Precise measurement fulfilling assembly constraints",
+      "Advanced SolidWorks modeling (patterned extrusions, swept profiles, shelling, symmetric and asymmetric lofts)",
+      "Assembly mates & exploded view animation",
+      "Technical drawings & dimensioning"
+    ],
+    "tools": ["SolidWorks", "Vernier Calipers", "Micrometer Gauge"],
+    "obstacles_and_solutions": [
+      {
+        "obstacle": "Obtaining accurate measurements due to the enclosed design of the product.",
+        "solution": "Averaged multiple measurement samples and cross-referenced them with mated parts in the assembly."
+      },
+      {
+        "obstacle": "Establishing core geometry for each part.",
+        "solution": "Applied advanced modeling techniques and consulted the SolidWorks community for software troubleshooting."
+      }
+    ],
+    "part_drawings": [
+      {
+        "src": "images/1_cheese_holder.png",
+        "title": "Cheese Holder"
+      },
+      {
+        "src": "images/2_connecting_rod.png",
+        "title": "Connecting Rod"
+      },
+      {
+        "src": "images/3_grater_body.png",
+        "title": "Grater Body"
+      },
+      {
+        "src": "images/4_grater_cap.png",
+        "title": "Grater Cap"
+      },
+      {
+        "src": "images/5_grater.png",
+        "title": "Final Grater Assembly"
+      },
+      {
+        "src": "images/6_handle_dowel.png",
+        "title": "Handle Dowel"
+      },
+      {
+        "src": "images/7_handle.png",
+        "title": "Handle"
+      },
+      {
+        "src": "images/8_wheel_axle.png",
+        "title": "Wheel Axle"
+      }
+    ],
+    "exploded_assembly": {
+      "src": "images/5_grater.png",
+      "title": "Exploded View"
+    },
+    "video": {
+      "type": "tiktok",
+      "cite": "https://www.tiktok.com/@unclekeze/video/7579988551949880583",
+      "id": "7579988551949880583",
+      "href": "https://www.tiktok.com/@unclekeze?refer=embed",
+      "username": "@unclekeze",
+      "title": "Solidworks reverse engineering of basic cheese grater",
+      "sound_href": "https://www.tiktok.com/music/original-sound-7537486391983262470?refer=embed"
+    }
+  },
+  {
+    "title": "Project 2",
+    "id": "project2",
+    "overview": "This is a placeholder for project 2.",
+    "objective": "Objective of project 2.",
+    "tags": ["Tag1", "Tag2"],
+    "skills": ["Skill 1", "Skill 2"],
+    "tools": ["Tool 1", "Tool 2"],
+    "obstacles_and_solutions": [
+      {
+        "obstacle": "Obstacle description.",
+        "solution": "Solution description."
+      }
+    ],
+    "part_drawings": [],
+    "exploded_assembly": {},
+    "video": {}
+  }
+]
