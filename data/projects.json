@@ -41,7 +41,7 @@
       },
       {
         "src": "images/5_grater.png",
-        "title": "Final Grater Assembly"
+        "title": "Grater"
       },
       {
         "src": "images/6_handle_dowel.png",
@@ -57,7 +57,7 @@
       }
     ],
     "exploded_assembly": {
-      "src": "images/5_grater.png",
+      "src": "images/cheesegraterexploded.png",
       "title": "Exploded View"
     },
     "video": {
