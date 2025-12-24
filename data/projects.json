@@ -71,11 +71,11 @@
     }
   },
   {
-    "title": "Project 2",
-    "id": "project2",
-    "overview": "This is a placeholder for project 2.",
+    "title": "Swivel Desk Lamp",
+    "id": "swivelamp",
+    "overview": "This project involves ...",
     "objective": "Objective of project 2.",
-    "tags": ["Tag1", "Tag2"],
+    "tags": ["Onshape", "SolidWorks", "3D Modeling"],
     "skills": ["Skill 1", "Skill 2"],
     "tools": ["Tool 1", "Tool 2"],
     "obstacles_and_solutions": [
@@ -84,8 +84,60 @@
         "solution": "Solution description."
       }
     ],
-    "part_drawings": [],
-    "exploded_assembly": {},
+    "part_drawings": [
+      {
+        "src": "images/1_base.png",
+        "title": "Base"
+      },
+      {
+        "src": "images/2_baseconnector.png",
+        "title": "Base Connector"
+      },
+      {
+        "src": "images/3_legbraked.png",
+        "title": "Leg Braked"
+      },
+      {
+        "src": "images/4_axel.png",
+        "title": "Axel"
+      },
+      {
+        "src": "images/5_spring.png",
+        "title": "Spring"
+      },
+      {
+        "src": "images/6_leg.png",
+        "title": "Leg"
+      },
+      {
+        "src": "images/7_topconnector.png",
+        "title": "Top Connector"
+      },
+      {
+        "src": "images/8_middleconnector.png",
+        "title": "Middle Connector"
+      },
+      {
+        "src": "images/11_legbrakedmiddle.png",
+        "title": "Leg Braked Middle"
+      },
+      {
+        "src": "images/12_lighthouse.png",
+        "title": "Light House"
+      },
+      {
+        "src": "images/13_headconnector1.png",
+        "title": "Head Connector 1"
+      },
+      {
+        "src": "images/14_headconnector2.png",
+        "title": "Head Connector 2"
+      }
+    ],
+    "exploded_assembly": {
+      "src": "images/swivellampexploded.jpg",
+      "title": "Exploded View"
+    },
     "video": {}
   }
 ]
