@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Kingsley Design Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <script>
@@ -30,9 +31,9 @@
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <!-- <button class="hamburger" onclick="toggleMenu()">☰</button> -->
-
-        <div class="nav-center">Kingsley Eze Portfolio</div>
+        <a class="nav-center" href="#home">
+            <div>Kingsley Eze Portfolio</div>
+        </a>
 
         <ul class="nav-links show-menu" id="navMenu">
             <li><a href="#home">HOME</a></li>
@@ -77,7 +78,7 @@
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section id="projects" class="section-block fade-section">
+    <section id="projects" class="section-block">
         <h2>Projects</h2>
         <div class="project-grid">
             <div class="project-card">
@@ -86,12 +87,12 @@
                 <p>Full reconstruction of a multi-part kitchen tool using SolidWorks.</p>
                 <a href="/cheesegrater" class="btn">View Project</a>
             </div>
-            
+
             <div class="project-card">
-                <img src="/2_cheesegrater/images/thumbnail.png">
+                <img src="/cheesegrater/images/thumbnail.png">
                 <h3>Cheese Grater Reverse Engineering</h3>
                 <p>Full reconstruction of a multi-part kitchen tool using SolidWorks.</p>
-                <a href="/2_cheesegrater/index.html" class="btn">View Project</a>
+                <a href="/cheesegrater" class="btn">View Project</a>
             </div>
 
             <div class="project-card">
@@ -106,10 +107,24 @@
     <!-- CONTACT SECTION -->
     <section id="contact" class="section-block fade-section">
         <h2>Contact Me</h2>
-        <a href="mailto:kngseze@gmail.com">Email </a>
-        <a href="https://www.linkedin.com/in/kingsley-izima/">LinkedIn </a>
-        <a href="https://github.com/kayazay/">GitHub </a>
-        <a href="https://www.youtube.com/channel/UCYRzrt8BZNZCUrwM7uRhqHA">Youtube</a>
+        <div class="contact-links">
+            <a href="mailto:kngseze@gmail.com" target="_blank">
+                <img src="./images/gmail.svg" alt="">
+                Email
+            </a>
+            <a href="https://www.linkedin.com/in/kingsley-izima/" target="_blank">
+                <img src="./images/linkedin.svg" alt="">
+                LinkedIn
+            </a>
+            <a href="https://github.com/kayazay/" target="_blank">
+                <img src="./images/github.svg" alt="">
+                GitHub
+            </a>
+            <a href="https://www.youtube.com/channel/UCYRzrt8BZNZCUrwM7uRhqHA" target="_blank">
+                <img src="./images/youtube.svg" alt="">
+                Youtube
+            </a>
+        </div>
     </section>
 
 
