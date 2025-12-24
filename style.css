@@ -11,18 +11,10 @@ html {
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  margin: 0;
   background: #181a1b;
   color: #e6e6e6;
   text-align: center;
-  /* scroll-snap-type: y mandatory; */
   overflow-x: clip;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 /* HEADINGS */
@@ -49,20 +41,18 @@ h3 {
 
 /* PARAGRAPHS */
 p {
-  font-size: 20px;
-  line-height: 1.7;
-  margin-left: 24px;
-  margin-top: 12px;
+  font-size: 24px;
+  line-height: 1.75;
   max-width: 90%;
   color: #d0d0d0;
 }
 
 /* SECTION BLOCKS (FULL-SCREEN) */
 .section-block {
-  max-height: 100vh;
-  padding: 80px;
+  min-height: 60vh;
+  padding: 64px;
   display: flex;
-  gap: 24px;
+  gap: 28px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -70,9 +60,10 @@ p {
 }
 
 /* Home image */
-
 .center-image {
-  width: 350px;
+  width: 70%;
+  max-width: 500px;
+  max-height: 56vh;
   border-radius: 10px;
   margin: 10px 20px;
   box-shadow: 0 0 22px rgba(127, 255, 212, 0.18);
@@ -107,16 +98,16 @@ p {
   align-items: center;
 }
 
-.skills-div li img, .logo {
+.skills-div li img,
+.logo {
   width: 100%;
   height: 100%;
 }
 
 .skills-div li:hover {
-    transform: translateY(-2px); /* Moves up slightly on hover */
-    background-color: #008080;
+  transform: translateY(-2px); /* Moves up slightly on hover */
+  background-color: #008080;
 }
-
 
 @keyframes moveGradient {
   0% {
@@ -133,7 +124,6 @@ p {
 #projects {
   height: auto;
   scroll-snap-align: start;
-  padding: 80px 20px;
 }
 
 /* Project grid */
@@ -183,8 +173,12 @@ p {
 #contact a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
   transition: font-size ease-in 300ms;
+  font-size: 1.25rem;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 #contact a:hover {
@@ -192,6 +186,19 @@ p {
   font-size: 20px;
 }
 
+.contact-links {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact-links a img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
 
 /* Buttons */
 
@@ -363,7 +370,6 @@ p {
 .backlink {
   margin: 32px auto 100px;
   text-align: center;
-
 }
 
 .backlink a {
@@ -402,6 +408,7 @@ p {
   font-family: Georgia, serif;
   text-align: center;
   width: 25%;
+  text-decoration: none;
 }
 
 /* HAMBURGER LEFT */
@@ -460,35 +467,90 @@ p {
   transform: translateX(0);
 }
 
-/* RESPONSIVENESS */
-@media (max-width: 1280px) {
+
+@media (max-width: 1024px) {
   .skills-div {
     margin: 40px 0;
   }
-}
+  .section-block {
+    padding: 48px;
+  }
 
-@media (max-width: 1024) {
-  .section {
-    max-width: 80%;
-    margin: 40px auto;
+  .navbar {
+    padding: 12px 32px;
+    gap: 32px;
+  }
+  .nav-center {
+    font-size: 20px;
+    width: 25%;
+  }
+  .nav-links {
+    width: 70%;
+  }
+  .nav-links a {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    margin: 0 10px;
   }
 }
 
-/* MOBILE FONT OPTIMIZATION */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .section-block {
+    padding: 40px 28px;
+  }
   h1 {
-    font-size: 36px;
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .project-card {
+    width: 90%;
+  }
+  .project-grid {
+    padding: 24px;
+  }
+  .skills-div {
+    margin: 0;
+  }
+  /* NAVBAR */
+  .navbar {
+    padding: 12px 16px;
+    gap: 28px;
+  }
+  .nav-center {
+    font-size: 1rem;
+    width: 20%;
+    display: none;
+  }
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav-links a {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-block {
+    padding: 28px 16px;
+  }
+  h1 {
+    font-size: 32px;
   }
   h2 {
     font-size: 28px;
   }
   p {
-    font-size: 24px;
+    font-size: 18px;
   }
-  .project-card {
-    width: 90%;
-  }
-  .center-image {
-    width: 260px;
+  .project-grid {
+    padding: 16px;
   }
 }
