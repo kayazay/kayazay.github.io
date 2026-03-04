@@ -74,18 +74,18 @@
     "title": "Swivel Desk Lamp",
     "id": "3_swivelamp",
     "overview": "This project involved modeling a swivel desk lamp inspired by an IKEA design with 360-degree base rotation and adjustable arm flexibility. I studied an existing lamp to understand its major components and interaction, then created my own version with similar functionality. This was my first CAD project and my introduction to 3D modeling.",
-    "objective": "The main objective of this project was to learn basic 3D modeling skills, including the use of extusions, revolves,  skills and gain practical experience. My intent was to understand basic features such as extrusions, revolves, and assembly mates.",
+    "objective": "The main objective of this project was to learn basic 3D modeling skills and gain practical experience. My intent was to understand basic features such as extrusions, revolves, and assembly mates.",
     "tags": ["Onshape", "SolidWorks"],
     "skills": ["3D Part Modeling", "Basic Assemblies", "Onshape -> Solidworks Interoperability", "Design Referencing"],
     "tools": ["Onshape", "Solidworks"],
     "obstacles_and_solutions": [
       {
       "obstacle": "Creating realistic assembly motion",
-      "solution": "Simple mates were used to allow basic rotation and movement between parts. The focus was on learning assembly concepts rather than more mechanical realism"
+      "solution": "Simple mates were used to allow basic rotation and movement between parts. The focus was on learning assembly concepts rather than mechanical realism."
     },
     {
       "obstacle": "Documenting the project for portfolio presentation",
-      "solution": "The model was exported from Onshape to SolidWorks, where Feature Recognition recreated most features and patterns with minimal rework."
+      "solution": "This model was exported from Onshape to SolidWorks, where Feature Recognition was used to recreate most features and patterns with minimal rework."
     }
     ],
     "part_drawings": [
