@@ -1,7 +1,7 @@
 [
   {
     "title": "Cheese Grater Reverse Engineering",
-    "id": "cheesegrater",
+    "id": "2_cheesegrater",
     "overview": "This project involves reverse-engineering a plastic kitchen cheese grater. I worked with 8 components through disassembly, part measurement, sketching, 3D modeling, and final product assembly.",
     "objective": "This project was completed as part of a class term assignment. The goal was to develop familiarity with disassembly and reconstruction of real-world objects to gain an understanding of their design features, how components interact, and the underlying manufacturing considerations.",
     "tags": ["Reverse Engineering", "3D Modeling", "CAD", "Mechanical Design"],
@@ -72,7 +72,7 @@
   },
   {
     "title": "Swivel Desk Lamp",
-    "id": "swivelamp",
+    "id": "3_swivelamp",
     "overview": "This project involved modeling a swivel desk lamp inspired by an IKEA design with 360-degree base rotation and adjustable arm flexibility. I studied an existing lamp to understand its major components and interaction, then created my own version with similar functionality. This was my first CAD project and my introduction to 3D modeling.",
     "objective": "The main objective of this project was to learn basic 3D modeling skills, including the use of extusions, revolves,  skills and gain practical experience. My intent was to understand basic features such as extrusions, revolves, and assembly mates.",
     "tags": ["Onshape", "SolidWorks"],
@@ -143,5 +143,46 @@
       "title": "Exploded View"
     },
     "video": {}
+  },
+  {
+    "title": "Assembly & Model of a City Bicycle",
+    "id": "citybicycle",
+    "overview": "This project.",
+    "objective": "This project.",
+    "tags": ["Reverse Engineering", "3D Modeling", "CAD", "Mechanical Design"],
+    "skills": [
+      "xyz",
+      "xyz2"
+    ],
+    "tools": ["SolidWorks", "Vernier Calipers", "Micrometer Gauge"],
+    "obstacles_and_solutions": [
+      {
+        "obstacle": "oxyz.",
+        "solution": "sxyz"
+      },
+      {
+        "obstacle": "oxyz1",
+        "solution": "sxyz2"
+      }
+    ],
+    "part_drawings": [
+      {
+        "src": "images/1_xyz.png",
+        "title": "xyz"
+      }
+    ],
+    "exploded_assembly": {
+      "src": "images/xyzexploded.jpg",
+      "title": "Exploded View"
+    },
+    "xyzvideo": {
+      "type": "tiktok",
+      "cite": "https://www.tiktok.com/@unclekeze/video/7579988551949880583",
+      "id": "7579988551949880583",
+      "href": "https://www.tiktok.com/@unclekeze?refer=embed",
+      "username": "@unclekeze",
+      "title": "Solidworks reverse engineering of basic cheese grater",
+      "sound_href": "https://www.tiktok.com/music/original-sound-7537486391983262470?refer=embed"
+    }
   }
 ]
