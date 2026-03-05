@@ -171,19 +171,19 @@
         "title": "Body"
       },
       {
-        "src": "images/2_front_guard.png",
-        "title": "Front Guard"
+        "src": "images/2_seat.png",
+        "title": "Seat"
       },
       {
-        "src": "images/3_seat.png",
-        "title": "Seat"
+        "src": "images/3_front_guard.png",
+        "title": "Front Guard"
       },
       {
         "src": "images/4_guard_fork.png",
         "title": "Guard Fork"
       },
       {
-        "src": "images/5_front fork.png",
+        "src": "images/5_front_fork.png",
         "title": "Front Fork"
       },
       {
