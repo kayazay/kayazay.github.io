@@ -167,8 +167,60 @@
     ],
     "part_drawings": [
       {
-        "src": "images/1_xyz.png",
-        "title": "xyz"
+        "src": "images/1_body.png",
+        "title": "Body"
+      },
+      {
+        "src": "images/2_front_guard.png",
+        "title": "Front Guard"
+      },
+      {
+        "src": "images/3_seat.png",
+        "title": "Seat"
+      },
+      {
+        "src": "images/4_guard_fork.png",
+        "title": "Guard Fork"
+      },
+      {
+        "src": "images/5_front fork.png",
+        "title": "Front Fork"
+      },
+      {
+        "src": "images/5_rear_fork.png",
+        "title": "Rear Fork"
+      },
+      {
+        "src": "images/6_pedal_fork.png",
+        "title": "Pedal Fork"
+      },
+      {
+        "src": "images/7_handle_bar.png",
+        "title": "Handle Bar"
+      },
+      {
+        "src": "images/8_bike_holder.png",
+        "title": "Bike Holder"
+      },
+      {
+        "src": "images/9_rim.png",
+        "title": "Rim"
+      },
+      {
+        "src": "images/10_tyre.png",
+        "title": "Tyre"
+      },
+      {
+        "src": "images/11_front_lamp.png",
+        "title": "Front Lamp"
+      },
+      {
+        "src": "images/12_pedal_foot.png",
+        "title": "Pedal Foot"
+      },
+      {
+        "src": "images/13_pedal_axle.png",
+        "title": "Pedal Axle"
       }
     ],
     "exploded_assembly": {
